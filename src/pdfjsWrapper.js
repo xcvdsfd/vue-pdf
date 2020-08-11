@@ -1,6 +1,6 @@
 import {
 	PDFLinkService
-} from 'vue-pdf/pdfjs-dist/lib/web/pdf_link_service';
+} from 'pdfjs-dist/lib/web/pdf_link_service';
 
 var pendingOperation = Promise.resolve();
 export default function (PDFJS) {
