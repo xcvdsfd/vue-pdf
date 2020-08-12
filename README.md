@@ -75,7 +75,7 @@ Triggered when an internal link is clicked
 ### Public methods
 
 #### print(dpi, pageList) * _experimental_ *
-  * `dpi`: the print resolution of the document (try 100).
+  * `dpi`: the print rezolution of the document (try 100).
   * `pageList`: the list (array) of pages to print.
 
 ### Public static methods
@@ -155,7 +155,7 @@ export default {
 	},
 	mounted() {
 
-		this.src.promise.then(pdf => {
+		this.src.then(pdf => {
 
 			this.numPages = pdf.numPages;
 		});
