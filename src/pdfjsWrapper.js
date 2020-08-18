@@ -31,6 +31,12 @@ export default function (PDFJS) {
 		// source.pdfBug = true;
 		// source.stopAtErrors = true;
 
+		PDFJS.cMapUrl = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/cmaps/'
+		PDFJS.cMapPacked = true
+
+		source.cMapUrl = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/cmaps/';
+		source.cMapPacked = true
+
 		var loadingTask = PDFJS.getDocument(source);
 		loadingTask.__PDFDocumentLoadingTask = true; // since PDFDocumentLoadingTask is not public
 
